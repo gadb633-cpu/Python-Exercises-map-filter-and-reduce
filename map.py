@@ -108,3 +108,12 @@ print(list(active_users))
 passwords = ["abc", "hello123", "Python2026", "pass", "GoodPass99"]
 new_list= filter(lambda password:password if len(password) >=8 else "",passwords)
 print(list(new_list))
+
+# 9. Keep only valid tasks
+tasks = [
+    {"title": "Clean room", "done": True, "priority": 2},
+    {"title": "Study Python", "done": False, "priority": 1},
+    {"title": "Play game", "done": False, "priority": 5},
+    {"title": "Send email", "done": True, "priority": 1}]
+new_list1= filter(lambda task:task if task["done"]==False and task["priority"]<=3 else "",tasks)
+print(list(new_list1))
