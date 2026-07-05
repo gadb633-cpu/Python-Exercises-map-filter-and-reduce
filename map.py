@@ -85,3 +85,12 @@ print(list(names_that_start_with_A))
 numbers = [-5, 3, 0, 12, -2, 8]
 numbers_bigger_than_0 = filter(lambda num:num if num > 0 else "",numbers)
 print(list(numbers_bigger_than_0))
+
+# 6. Keep only products cheaper than 50
+products = [
+    {"name": "Book", "price": 40},
+    {"name": "Bag", "price": 120},
+    {"name": "Pen", "price": 5},
+    {"name": "Shirt", "price": 60}]
+product_cost_less_than_50 = filter(lambda product:product if product["price"]<50 else "",products)
+print(list(product_cost_less_than_50))
