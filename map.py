@@ -41,4 +41,13 @@ products = [
     {"name": "Eggs", "price": 15}]
 
 list_with_strings = map(lambda product:f"{product["name"]} costs {product["price"]}",products)
-print(list(list_with_strings)) 
+print(list(list_with_strings))
+
+# 9. Update player scores
+players = [
+    {"name": "Dana", "score": 70},
+    {"name": "Yoni", "score": 85},
+    {"name": "Rami", "score": 40}]
+
+bigger_by_5 = map(lambda player:{"name":player["name"],"score":player["score"]+5},players)
+print(list(bigger_by_5))
