@@ -33,3 +33,12 @@ print(list(costing_to_centimeters))
 grades = [95, 40, 67, 88, 52]
 result = map(lambda grade:"pass" if grade >=60 else "fail",grades)
 print(list(result))
+
+# 8. Create product names with prices
+products = [
+    {"name": "Bread", "price": 8},
+    {"name": "Milk", "price": 6},
+    {"name": "Eggs", "price": 15}]
+
+list_with_strings = map(lambda product:f"{product["name"]} costs {product["price"]}",products)
+print(list(list_with_strings)) 
