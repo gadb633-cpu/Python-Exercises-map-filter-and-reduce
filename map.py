@@ -126,3 +126,16 @@ students = [
     {"name": "Eli", "grade": 75, "attendance": 85}]
 students_with_certificate = filter(lambda student:student if student["grade"]>=70 and student["attendance"]>=80 else "",students)
 print(list(students_with_certificate))
+
+# Part 4 — Open Questions About reduce
+# 1. Basic idea
+# 2. Step-by-step thinking
+numbers = [2, 3, 4]
+# first 2*3
+# second 6*4
+# result 24
+
+# 3. Compare tools
+# If you want to change elements in a list, use map, and if you want to sum or search for a specific element, use reduce.
+
+# 4. Function parameters
