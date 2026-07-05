@@ -65,3 +65,8 @@ print(list(list_of_strings))
 numbers = [4, 7, 10, 13, 18, 21]
 even_numbers = filter(lambda number:number if number %2==0 else "",numbers)
 print(list(even_numbers))
+
+# 2. Keep only passing grades
+grades = [100, 55, 70, 40, 88, 59]
+grade_above_60 = filter(lambda grade:grade if grade >= 60 else "",grades)
+print(list(grade_above_60))
