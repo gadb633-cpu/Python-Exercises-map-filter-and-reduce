@@ -70,3 +70,8 @@ print(list(even_numbers))
 grades = [100, 55, 70, 40, 88, 59]
 grade_above_60 = filter(lambda grade:grade if grade >= 60 else "",grades)
 print(list(grade_above_60))
+
+# 3. Keep only short words
+words = ["dog", "elephant", "cat", "computer", "sun"]
+words_with_3_letters = filter(lambda word:word if len(word)<=3 else "",words)
+print(list(words_with_3_letters))
