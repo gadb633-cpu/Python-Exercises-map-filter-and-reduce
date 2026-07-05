@@ -6,10 +6,15 @@ print(list(numbers_bigger_by_10))
 
 # 2. Turn prices into prices with tax
 prices = [100, 50, 200, 80]
-prices_with_17_present = map(lambda num:num + num*0.17,prices)
+prices_with_17_present = map(lambda price:price + price*0.17,prices)
 print(list(prices_with_17_present))
 
 # 3. Get the length of each word
 words = ["cat", "elephant", "dog", "python"]
 length_list = map(lambda word:len(word),words)
 print(list(length_list))
+
+# 4. Make all names uppercase
+names = ["dan", "maya", "ron", "lea"]
+uppercase = map(lambda name:name.upper(),names)
+print(list(uppercase))
