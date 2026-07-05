@@ -160,3 +160,8 @@ print(multi_num)
 words = ["cat", "elephant", "dog", "computer"]
 max_word = reduce(lambda max,word:max if word<max else word ,words)
 print(max_word)
+
+# 4. Join words into one sentence
+words = ["Python", "is", "very", "useful"]
+sentence = reduce(lambda x,word:f"{x} {word}",words)
+print(sentence)
