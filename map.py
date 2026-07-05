@@ -75,3 +75,8 @@ print(list(grade_above_60))
 words = ["dog", "elephant", "cat", "computer", "sun"]
 words_with_3_letters = filter(lambda word:word if len(word)<=3 else "",words)
 print(list(words_with_3_letters))
+
+# 4. Keep only names that start with A
+names = ["Adam", "Dana", "Amit", "Noa", "Alon"]
+names_that_start_with_A = filter(lambda name:name if name[0] == "A" else "",names)
+print(list(names_that_start_with_A))
