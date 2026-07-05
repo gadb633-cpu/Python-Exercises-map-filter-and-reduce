@@ -165,3 +165,12 @@ print(max_word)
 words = ["Python", "is", "very", "useful"]
 sentence = reduce(lambda x,word:f"{x} {word}",words)
 print(sentence)
+
+# 5. Find the student with the highest grade
+students = [
+    {"name": "Dana", "grade": 85},
+    {"name": "Ron", "grade": 92},
+    {"name": "Maya", "grade": 78},
+    {"name": "Gil", "grade": 95}]
+max_grade = reduce(lambda max,student:max if student["grade"] < max["grade"] else student ,students)
+print(max_grade)
