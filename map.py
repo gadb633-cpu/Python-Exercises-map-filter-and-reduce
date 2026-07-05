@@ -59,3 +59,9 @@ orders = [
     {"id": 3, "item": "Bag", "amount": 1, "price": 120}]
 list_of_strings = map(lambda order: f"order {order["id"]} :{order["item"]} total is {order["amount"]*order["price"]}",orders)
 print(list(list_of_strings))
+
+# Part 2 — filter Exercises
+# 1. Keep only even numbers
+numbers = [4, 7, 10, 13, 18, 21]
+even_numbers = filter(lambda number:number if number %2==0 else "",numbers)
+print(list(even_numbers))
