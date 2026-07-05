@@ -117,3 +117,12 @@ tasks = [
     {"title": "Send email", "done": True, "priority": 1}]
 new_list1= filter(lambda task:task if task["done"]==False and task["priority"]<=3 else "",tasks)
 print(list(new_list1))
+
+# 10. Keep only students that can get a certificate
+students = [
+    {"name": "Noa", "grade": 90, "attendance": 95},
+    {"name": "Dan", "grade": 55, "attendance": 100},
+    {"name": "Rina", "grade": 80, "attendance": 70},
+    {"name": "Eli", "grade": 75, "attendance": 85}]
+students_with_certificate = filter(lambda student:student if student["grade"]>=70 and student["attendance"]>=80 else "",students)
+print(list(students_with_certificate))
