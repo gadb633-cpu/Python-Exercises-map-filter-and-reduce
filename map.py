@@ -23,3 +23,8 @@ print(list(uppercase))
 users = ["Noa", "Adam", "Lior", "Tamar"]
 with_hello = map(lambda user:f"hello {user}",users)
 print(list(with_hello))
+
+# 6. Convert meters to centimeters
+meters = [1.5, 2, 0.75, 3.2]
+costing_to_centimeters = map(lambda meret:meret*100,meters)
+print(list(costing_to_centimeters))
