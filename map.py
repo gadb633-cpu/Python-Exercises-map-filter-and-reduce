@@ -18,3 +18,8 @@ print(list(length_list))
 names = ["dan", "maya", "ron", "lea"]
 uppercase = map(lambda name:name.upper(),names)
 print(list(uppercase))
+
+# 5. Create short user messages
+users = ["Noa", "Adam", "Lior", "Tamar"]
+with_hello = map(lambda user:f"hello {user}",users)
+print(list(with_hello))
