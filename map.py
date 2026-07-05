@@ -141,3 +141,5 @@ numbers = [2, 3, 4]
 # 4. Function parameters
 # The first parameter says that this is the first element and the second element is added to it or any other operation and this is stored in x and y is any subsequent element that you want to either add or replace.
 
+# 5. Readability
+# if you want to operate on functions, reduce is clearer And if you want to operate with conditions, for is clearer
