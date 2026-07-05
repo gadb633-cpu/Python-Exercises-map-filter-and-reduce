@@ -80,3 +80,8 @@ print(list(words_with_3_letters))
 names = ["Adam", "Dana", "Amit", "Noa", "Alon"]
 names_that_start_with_A = filter(lambda name:name if name[0] == "A" else "",names)
 print(list(names_that_start_with_A))
+
+# 5. Keep only positive numbers
+numbers = [-5, 3, 0, 12, -2, 8]
+numbers_bigger_than_0 = filter(lambda num:num if num > 0 else "",numbers)
+print(list(numbers_bigger_than_0))
