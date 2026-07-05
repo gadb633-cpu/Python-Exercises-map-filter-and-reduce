@@ -143,3 +143,10 @@ numbers = [2, 3, 4]
 
 # 5. Readability
 # if you want to operate on functions, reduce is clearer And if you want to operate with conditions, for is clearer
+
+from functools import reduce
+# Part 5 — reduce Coding Questions
+# 1. Sum all numbers
+numbers = [5, 10, 20, 15]
+sum_num = reduce(lambda x,y:x+y,numbers)
+print(sum_num)
