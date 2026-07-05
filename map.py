@@ -103,3 +103,8 @@ users = [
     {"name": "Gil", "active": False}]
 active_users = filter(lambda user:user if user["active"]==True else "",users)
 print(list(active_users))
+
+# 8. Keep only strong passwords
+passwords = ["abc", "hello123", "Python2026", "pass", "GoodPass99"]
+new_list= filter(lambda password:password if len(password) >=8 else "",passwords)
+print(list(new_list))
