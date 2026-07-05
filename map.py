@@ -155,3 +155,8 @@ print(sum_num)
 numbers = [2, 3, 4, 5]
 multi_num = reduce(lambda x,y:x*y,numbers)
 print(multi_num)
+
+# 3. Find the longest word
+words = ["cat", "elephant", "dog", "computer"]
+max_word = reduce(lambda max,word:max if word<max else word ,words)
+print(max_word)
