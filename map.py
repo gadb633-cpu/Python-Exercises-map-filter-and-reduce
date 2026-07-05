@@ -51,3 +51,11 @@ players = [
 
 bigger_by_5 = map(lambda player:{"name":player["name"],"score":player["score"]+5},players)
 print(list(bigger_by_5))
+
+# 10. Create order summaries
+orders = [
+    {"id": 1, "item": "Book", "amount": 3, "price": 40},
+    {"id": 2, "item": "Pen", "amount": 10, "price": 5},
+    {"id": 3, "item": "Bag", "amount": 1, "price": 120}]
+list_of_strings = map(lambda order: f"order {order["id"]} :{order["item"]} total is {order["amount"]*order["price"]}",orders)
+print(list(list_of_strings))
