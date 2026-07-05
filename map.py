@@ -150,3 +150,8 @@ from functools import reduce
 numbers = [5, 10, 20, 15]
 sum_num = reduce(lambda x,y:x+y,numbers)
 print(sum_num)
+
+# 2. Multiply all numbers
+numbers = [2, 3, 4, 5]
+multi_num = reduce(lambda x,y:x*y,numbers)
+print(multi_num)
