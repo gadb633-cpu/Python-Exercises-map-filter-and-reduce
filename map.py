@@ -94,3 +94,12 @@ products = [
     {"name": "Shirt", "price": 60}]
 product_cost_less_than_50 = filter(lambda product:product if product["price"]<50 else "",products)
 print(list(product_cost_less_than_50))
+
+# 7. Keep only active users
+users = [
+    {"name": "Dana", "active": True},
+    {"name": "Ron", "active": False},
+    {"name": "Maya", "active": True},
+    {"name": "Gil", "active": False}]
+active_users = filter(lambda user:user if user["active"]==True else "",users)
+print(list(active_users))
