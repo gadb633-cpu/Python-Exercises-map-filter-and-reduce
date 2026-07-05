@@ -28,3 +28,8 @@ print(list(with_hello))
 meters = [1.5, 2, 0.75, 3.2]
 costing_to_centimeters = map(lambda meret:meret*100,meters)
 print(list(costing_to_centimeters))
+
+# 7. Create pass/fail text from grades
+grades = [95, 40, 67, 88, 52]
+result = map(lambda grade:"pass" if grade >=60 else "fail",grades)
+print(list(result))
